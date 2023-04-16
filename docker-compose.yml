@@ -1,6 +1,8 @@
 version: '3.7'
 services:
   app:
+    entrypoint: /app/app.py
+    command: -v
     network_mode: host
     build:
       context: .
